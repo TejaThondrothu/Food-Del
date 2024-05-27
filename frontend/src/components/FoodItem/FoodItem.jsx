@@ -5,11 +5,13 @@ import { StoreContext } from '../../context/StoreContext';
 
 export const FoodItem = ({id,name,description,price,image}) => {
     //const [itemCount,setItemCount] =useState(0);
-    const {cartItems,addToCart,removeFromCart} = useContext(StoreContext);
+    const {cartItems,addToCart,removeFromCart,url} = useContext(StoreContext);
   return (
     <div className="food-item">
         <div className="food-tem-image-container">
-            <img src={image} alt="" className="food-item-image" />
+            {/* <img src={image} alt="" className="food-item-image" /> */}
+            {/* the above is for loading images from local staorage,the below is from database */}
+            <img src={url+"/images/"+image} alt="" className="food-item-image" />
             {/* for understanding purpose */}
             {/* {!itemCount
                 ?<img className='add' onClick={()=>setItemCount(prev=>prev+1)} src={assets.add_icon_white}/>
