@@ -50,10 +50,17 @@ const PlaceOrder = () => {
     }
     
   }
-
+  
+  // Not allowing user to navigate >> Proceed To checkout payment Gateway >> without login
   useEffect(()=>{
     console.log(data);
-  },[data])
+    if(!token){
+      navigate('/cart')
+    }else if(getTotalCartAmount() === 0){
+      navigate('/cart')
+    }
+
+  },[token])
 
   return (
       <form className="place-order" onSubmit={placeOrder}>
