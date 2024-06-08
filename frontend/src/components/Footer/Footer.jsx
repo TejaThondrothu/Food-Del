@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="footer-content">
             <div className="footer-content-left">
                 <img src={assets.logo} alt="" />
-                <p>Loreum Ispum is simply dummu text of the printin the  all the chaNGES WITH FOR CHECKING HOW FOOTER IS LOOKIOMG </p>
+                <p>FoodDeliveryApp is your go-to solution for fast, fresh, and delicious meals delivered straight to your doorstep. We offer a diverse menu, ranging from local favorites to international cuisines, ensuring there's something for everyone.</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />

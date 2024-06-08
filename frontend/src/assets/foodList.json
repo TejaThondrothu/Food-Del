@@ -1,0 +1,18 @@
+[
+    {
+      "_id": "1",
+      "name": "Greek salad",
+      "image": "food_1.jpg",
+      "price": 12,
+      "description": "Food provides essential nutrients for overall health and well-being",
+      "category": "Salad"
+    },
+    {
+      "_id": "2",
+      "name": "Veg salad",
+      "image": "food_2.jpg",
+      "price": 18,
+      "description": "Food provides essential nutrients for overall health and well-being",
+      "category": "Salad"
+    }
+  ]
