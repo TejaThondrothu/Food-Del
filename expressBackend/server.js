@@ -32,12 +32,11 @@ app.use("/api/cart",cartRouter)
 
 app.use("/api/order",orderRouter)
 
-// app.get("/",(req,res)=>{
-//     res.send("API is working")
-// })
+app.get("/",(req,res)=>{
+    res.send("API is working")
+})
 
 app.listen(port,()=>{
     console.log(`Sever started on http://localhost:${port}`)
 })
 
-//mongodb+srv://TejaThondrothuStack:12561256@cluster0.jrlkptp.mongodb.net/?
